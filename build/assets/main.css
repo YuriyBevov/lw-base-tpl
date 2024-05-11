@@ -3024,7 +3024,7 @@ picture {
   flex-wrap: wrap;
 }
 
-.flex-centered-content, .modal__overlay, .modal-closer, .header__nav, .lw-main-btn {
+.flex-centered-content, .header__nav, .lw-main-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3036,7 +3036,7 @@ picture {
   justify-content: center;
 }
 
-.flex-column, .main-modal .modal__header, .modal__body, .modal__content, .footer__field--contacts, .footer__field, .lw-text-content {
+.flex-column, .footer__field--contacts, .footer__field, .lw-text-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3084,7 +3084,7 @@ picture {
   border: 0;
 }
 
-.btn-reset, .modal-closer, .lw-main-btn {
+.btn-reset, .lw-main-btn {
   border: none;
   padding: 0;
   background: transparent;
@@ -3746,153 +3746,4 @@ picture {
 }
 
 /* Модальные окна */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 199;
-  display: none;
-}
-.modal.active {
-  display: block;
-}
-.modal-closer {
-  position: absolute;
-  top: 23px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-}
-.modal-closer svg {
-  fill: var(--primary);
-}
-.modal__overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.modal__content {
-  position: relative;
-  width: 90vw;
-  max-width: 700px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  max-height: 85vh;
-  padding: 25px;
-  overflow: hidden;
-  overflow-y: auto;
-  border-radius: 10px;
-  background-color: var(--modal-bg-color);
-}
-.modal__body {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.main-modal {
-  min-width: 360px;
-}
-.main-modal .offer-form {
-  width: 100%;
-}
-.main-modal .offer-form__field {
-  margin-bottom: 16px;
-}
-.main-modal .offer-form__field label {
-  font-size: 16px;
-}
-.main-modal .modal__header {
-  margin-bottom: 20px;
-}
-.main-modal .modal__header .lw-section-title {
-  font-size: clamp(18px, 2.4vw, 26px);
-  margin-bottom: 15px;
-  padding-right: 40px;
-}
-.main-modal .modal__header-text {
-  font-size: 14px;
-  line-height: 1.4;
-  color: var(--text-color);
-}
-
-.state-modal .modal-closer {
-  position: static;
-  margin-left: auto;
-}
-.state-modal.error-modal .modal__body svg {
-  fill: var(--danger);
-}
-.state-modal.error-modal .lw-section-title {
-  color: var(--danger);
-}
-.state-modal.success-modal .modal__body svg {
-  fill: var(--success);
-}
-.state-modal.success-modal .lw-section-title {
-  color: var(--success);
-}
-.state-modal .modal__content {
-  background-image: url("../assets/img/state-modal-bg.png");
-  background-size: cover;
-}
-.state-modal .modal__header {
-  margin-bottom: 20px;
-}
-.state-modal .modal__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 20px;
-}
-.state-modal .modal__body svg {
-  min-width: 48px;
-}
-.state-modal .modal__body .lw-section-title {
-  font-size: 18px;
-}
-
-.law-modal__title {
-  display: block;
-  font-size: 18px;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-}
-.law-modal .modal__content {
-  padding-top: 0;
-  width: 90vw;
-  max-width: 760px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  max-height: 75vh;
-}
-.law-modal .modal__header {
-  position: sticky;
-  top: 0;
-  padding: 20px 0;
-  background-color: var(--white);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  gap: 20px;
-}
-.law-modal .modal-closer {
-  position: static;
-  margin-left: auto;
-}
 /*# sourceMappingURL=main.css.map */
